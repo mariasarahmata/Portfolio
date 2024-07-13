@@ -1,0 +1,95 @@
+Q1: Which location has the highest baseline life expectancy? Display the name of the location and the corresponding life expectancy. [Maximum]
+
+A1: Singapore, 84.565300
+
+Q2: What is the baseline life expectancy for <paramater_territory_name>? [Linear Search]
+
+A2:
+
+---> If parameter_Serbia
+
+: Serbia, 75.651801
+
+---> If parameter_Philippines
+
+: Philippines, 71.798423
+
+---> If parameter_Prog3CutiePie
+
+Territory 'Prog3CutiePie' not found.
+
+Q3: How many territories have at least <parameter_value> year/s change in life expectancy due to tobacco? [Count]
+
+A3:
+
+---> If parameter_3.000000
+
+: 9
+
+---> If parameter_-1.000000
+
+: 203
+
+---> If parameter_0.450000
+
+: 200
+
+---> If parameter_100.000000
+
+: 0
+
+---> If parameter_0.000000
+
+: 203
+
+Q4: Which territories have the value that falls between the range of <parameter_value> year/s and <parameter_value> year/s change in life expectancy due to tobacco? List only three territories starting from the highest value. [Selection Sort]
+
+A4:
+
+---> If <parameter_1.400000> && <parameter_1.600000>
+
+(1) Tajikistan, 1.568172
+(2) Uzbekistan, 1.554100
+(3) Saudi_Arabia, 1.541952
+
+---> If <parameter_2.900000> && <parameter_3.000000>
+
+(1) Hungary, 2.995802
+(2) No territory found within specified range, -888.000000
+(3) No territory found within specified range, -888.000000
+
+---> If <parameter_-1.000000> && <parameter_1.000000>
+
+(1) Mexico, 0.978727
+(2) Togo, 0.973486
+(3) Sierra_Leone, 0.969914
+
+---> If <parameter_0.000000> && <parameter_0.200000>
+
+(1) No territory found within specified range, -888.000000
+(2) No territory found within specified range, -888.000000
+(3) No territory found within specified range, -888.000000
+
+Q5: What is the change in life expectancy due to metabolic factor for <paramater_territory_name> and <paramater_territory_name>? Compare which one is higher. [Binary Search after sort]
+
+A5:
+
+---> If parameter_Australia and parameter_Samoa
+
+: Australia has 3.790678 which is less than Samoa with 8.453508
+
+---> If parameter_Samoa and parameter_Australia
+
+: Australia has 3.790678 which is less than Samoa with 8.453508
+
+---> If parameter_Philippines and parameter_Prog3Cutie
+
+: No Answer. Territory 'Philippines' was found but Territory 'Prog3Cutie' was NOT found
+
+---> If parameter_Rawr and parameter_Meow
+
+: No Answer. Both Territory 'Rawr' and Territory 'Meow' were NOT found.
+
+---> If parameter_Japan and parameter_Japan
+
+: Both Japan and Japan have 2.546600
